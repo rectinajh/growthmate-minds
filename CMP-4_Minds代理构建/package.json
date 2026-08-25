@@ -1,0 +1,27 @@
+{
+  "name": "growthmate-minds",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GrowthMate (涨粉参谋) — always-on Minds agent for creator growth: memory, continuity, autonomous follow-up.",
+  "scripts": {
+    "doctor": "minds doctor",
+    "list": "minds list",
+    "show": "minds mind show --mind",
+    "history": "minds history growthmate-main",
+    "usage": "minds usage show --mind",
+    "balance": "minds cognition balance --mind",
+    "bazaar": "minds bazaar search",
+    "build": "node scripts/build-skills.mjs",
+    "build:inspect": "node scripts/build-skills.mjs --inspect",
+    "onboard": "node scripts/onboard.mjs",
+    "memory": "node scripts/memory.mjs",
+    "briefing": "node scripts/briefing.mjs",
+    "followup": "node scripts/followup.mjs",
+    "demo": "node scripts/demo.mjs"
+  },
+  "dependencies": {
+    "@animocabrands/minds-client-lib": "^0.1.3",
+    "@animocabrands/minds-cli": "^0.1.3"
+  }
+}
