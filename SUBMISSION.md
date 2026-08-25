@@ -33,7 +33,7 @@ DoraHacks 通常要求 YouTube / Vimeo / Bilibili 等可在线播放链接，而
 1. **推荐**：把 `CMP-5_演示视频/05_成片/GrowthMate_demo_720p_submit.mp4` 上传到 YouTube（设为 unlisted）或 Bilibili。
 2. 备选：上传到 Google Drive，设为「知道链接的人可查看」。
 3. 临时直链：仓库 raw 链接（可下载，不建议作为主提交链接）：
-   `https://raw.githubusercontent.com/rectinajh/growthmate-minds/main/CMP-5_演示视频/05_成片/GrowthMate_demo_720p_submit.mp4`
+   `https://raw.githubusercontent.com/rectinajh/growthmate-minds/main/CMP-5_%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91/05_%E6%88%90%E7%89%87/GrowthMate_demo_720p_submit.mp4`
 
 上传后，把最终链接回填到上方表格与 DoraHacks 表单。
 

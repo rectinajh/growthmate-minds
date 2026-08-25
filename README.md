@@ -3,6 +3,9 @@
 > Creative Minds Jam #1（香港）· DoraHacks ·「涨粉与互动」赛道
 > 一句话定位：**把创作者「每天要回、但没时间回」的粉丝关系，交给一个记得住、会自动做、有创作者声音的常驻 Minds 代理。**
 
+**代码仓库**：<https://github.com/rectinajh/growthmate-minds>
+
+
 GrowthMate 不是定时发帖器，也不是套话聊天机器人。它利用 Minds 的**长期记忆（Episodes / Tenets）**与**自主运行（Passive Autonomous Mode）**，落地三类行为：**记忆**、**连续性**、**自主跟进**。
 
 ---
