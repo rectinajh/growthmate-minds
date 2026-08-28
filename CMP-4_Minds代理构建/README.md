@@ -151,8 +151,9 @@ npx minds history growthmate-main --limit 50
 ## 7. 当前状态与下一步
 
 - ✅ 已在真实 Minds 账号构建完成：独立 Mind `GrowthMate.Advisor.Lin`（`8099503e-f36b-1410-8466-00039ce7df11`），三个 Skill 已装备并 dry-run 验证（见 `docs/live-verification.md`）。
+- ✅ Telegram 已接入，`briefing` 可主动推送。
 - 已确认：声线采用「仅文字草稿」。
-- 可选增强：Telegram 集成、平台数据源、cognition 充值、简报参数确认；详见 `docs/live-verification.md`。
-- 待推送：本目录作为独立 GitHub 仓库发布（本地已初始化 git，推送需要远端地址/凭据）。
+- 可选增强：平台数据源、cognition 充值、简报参数确认；详见 `docs/live-verification.md`。
+- 已发布：仓库 `https://github.com/rectinajh/growthmate-minds`。
 
 详细说明：`docs/minds-integration.md`、`docs/prompt-playbook.md`、`docs/demo-runbook.md`、`docs/live-verification.md`。

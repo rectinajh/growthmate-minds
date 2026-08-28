@@ -59,27 +59,44 @@ GrowthMate 不是定时发帖器，也不是套话聊天机器人。它利用 Mi
 
 前置：已注册 [hellominds.ai](https://hellominds.ai)，在 Builder console 创建 API key，Node.js 22+。
 
+### 1) 安装与配置
+
 ```bash
 cd CMP-4_Minds代理构建
 npm install
-cp .env.example .env        # 填入 MINDS_BUILDER_API_KEY
-npm run doctor              # 检查连通性
-npm run list                # 列出账号下的 Mind
-npm run onboard             # 写入人设与 Tenets
-npm run build               # 依次构建 记忆 → 连续性 → 自主跟进
-npm run demo                # 端到端冒烟演示
+cp .env.example .env
 ```
 
-运行验证：
+编辑 `.env`，至少填入 `MINDS_BUILDER_API_KEY`；可选填 `GROWTHMATE_MIND_ID`（用 `npm run list` 查 UUID，留空则自动取账号下第一个 Mind）。
+
+### 2) 检查连接
 
 ```bash
-npm run memory -- "@kiki 在最新视频下评论：上期那个汤底配方能出个详细版吗？"
+npm run doctor              # 检查连通性
+npm run list                # 列出账号下的 Mind，拿到 mindId
+npm run show -- <mind-uuid> # 查看某个 Mind 详情
+```
+
+### 3) 构建 GrowthMate
+
+```bash
+npm run onboard             # 写入人设与 Tenets
+npm run build               # 依次构建 记忆 → 连续性 → 自主跟进
+npm run build:inspect       # 同 build，并在结尾附加权限检查
+```
+
+### 4) 运行与验证
+
+```bash
+npm run memory -- "@kiki 在最新视频下评论：上期那个汤底配方能出个详细版吗？"   # 写入一条粉丝记忆
 npm run memory              # 查询：昨天谁最活跃？我答应过谁什么？
 npm run followup            # 生成待确认回复草稿
 npm run briefing            # 生成每日增长简报
+npm run demo                # 端到端冒烟演示
+npm run history             # 查看对话历史
 ```
 
-> 真实账号验证状态、已装备 Skill 与待办，见 [`CMP-4_Minds代理构建/docs/live-verification.md`](CMP-4_Minds代理构建/docs/live-verification.md)。
+> Telegram 已在线上 Mind 接入，`briefing` 会主动推送（未接入时降级为对话内推送）。真实账号验证状态、已装备 Skill 与待办，见 [`CMP-4_Minds代理构建/docs/live-verification.md`](CMP-4_Minds代理构建/docs/live-verification.md)。
 
 ---
 
